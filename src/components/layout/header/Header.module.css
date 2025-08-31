@@ -1,0 +1,60 @@
+.navbarCustom {
+  background-color: #fff;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1000;
+  transition: background 0.3s ease;
+  border-bottom: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(135deg, #74ebd5, #ACB6E5);
+}
+
+.iconAlign {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbarCustom,
+.navbarCustom a,
+.navbarCustom .iconAlign {
+  color: #1a2a4a;
+  margin: 0;
+  padding: 0.3rem;
+}
+
+.navbarCustom a:hover,
+.navbarCustom a:hover .iconAlign {
+  color: #27d4b4;
+  text-decoration: underline;
+}
+
+.active {
+  font-weight: 600;
+  color: #1a2a4a;
+  background: linear-gradient(135deg, #d4f3f7 0%, #e5eaf8 100%);
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+}
+
+:global(.dropdown-item:active),
+:global(.dropdown-item:focus),
+:global(.dropdown-item:hover) {
+  background-color: transparent;
+  color: #27d4b4;
+  text-decoration: underline;
+}
+
+.activeDropdown :global(.dropdown-toggle) {
+  font-weight: 600;
+  color: #1a2a4a !important;
+  background: linear-gradient(135deg, #d4f3f7 0%, #e5eaf8 100%);
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  border: none;
+}
+
+.activeDropdown :global(.dropdown-toggle)::after {
+  border-top-color: #1a2a4a !important;
+}

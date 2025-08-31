@@ -1,0 +1,33 @@
+.ingredientRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputGroup {
+  flex: 1;
+}
+
+.inputText {
+  min-width: 80px;
+}
+
+.formControl {
+  height: 38px;
+}
+
+.removeButtonWrapper {
+  align-self: flex-start;
+  padding-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .ingredientRow {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .removeButtonWrapper {
+    display: flex;
+    align-items: center;
+  }
+}

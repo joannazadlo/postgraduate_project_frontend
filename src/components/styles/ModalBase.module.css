@@ -1,0 +1,51 @@
+.modalBodyFlex {
+  display: flex;
+  justify-content: center;
+  background:  linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  padding: 1rem 1rem 1rem 1rem;
+  box-sizing: border-box;
+}
+
+.modalContentCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.modalHeaderCustom {
+  position: relative;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-bottom: none;
+  font-weight: 800;
+  text-align: center;
+  z-index: 10;
+  box-shadow: none;
+}
+
+.modalTitleCustom {
+  flex: 1 1 auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.modalFooterCustom {
+  background: white;
+  border-top: none;
+  box-shadow: 0 -1px 6px rgba(0,0,0,0.05);
+  justify-content: center;
+  padding: 1rem 0;
+  display: flex;
+}
+
+.customModalDialog {
+  max-width: 600px !important;
+  margin: 1.75rem auto; 
+  width: 90%; 
+}

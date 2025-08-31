@@ -1,0 +1,75 @@
+.ingredientList {
+  max-height: 80vh;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ingredientItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e5e5e5;
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.ingredientItem:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.ingredientText {
+  flex-grow: 1;
+  word-break: break-word;
+  white-space: normal;
+  margin-right: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.removeBtn {
+  background: transparent;
+  border: none;
+  color: #dc3545;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.removeBtn:hover {
+  color: #a71d2a;
+}
+
+.sidebarResponsive {
+  width: 33vw;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .sidebarResponsive {
+    width: 50vw;
+    max-width: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebarResponsive {
+    --bs-offcanvas-width: 100vw;
+    max-width: none;
+  }
+}

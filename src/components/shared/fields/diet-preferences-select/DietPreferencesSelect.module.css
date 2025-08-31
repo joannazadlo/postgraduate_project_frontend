@@ -1,0 +1,9 @@
+.customButton {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 1rem; 
+  border-radius: 999px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}

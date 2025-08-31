@@ -1,0 +1,10 @@
+.inputWrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.customButton {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    transition: all 0.2s ease-in-out;
+}

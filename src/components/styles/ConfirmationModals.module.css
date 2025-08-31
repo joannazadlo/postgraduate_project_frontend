@@ -1,0 +1,33 @@
+.modalTitleCustom {
+  flex: 1 1 auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.modalHeaderCustom {
+  position: relative;
+  background: white;
+  padding: 1.5rem 2rem 1.6rem 2rem;
+  font-weight: 800;
+  text-align: center;
+  z-index: 10;
+  border-bottom: 1.5px solid transparent;
+  border-image: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%) 1;
+}
+
+.modalFooterCustom {
+  position: relative;
+  background: white;
+  justify-content: center;
+  padding: 1.5rem 0 1rem 0;
+  display: flex;
+  border-top: 1.5px solid transparent;
+  border-image: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%) 1;
+}
+
+.modalBodyCustom {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}

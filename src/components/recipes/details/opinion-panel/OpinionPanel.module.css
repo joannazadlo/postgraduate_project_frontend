@@ -1,0 +1,32 @@
+.opinionLabel { 
+  font-weight: 600;
+  color: #444;
+}
+
+.opinionPanel {
+  display: flex;
+  align-items: center;
+  max-width: 167px; 
+  gap: 0.5rem;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  white-space: nowrap; 
+  justify-self: end;
+  flex-shrink: 0;    
+  overflow: visible;  
+}
+
+.customTooltip {
+  padding: 0.3rem 0.5rem !important;
+}
+
+@media (max-width: 900px) {
+  .opinionPanel {
+    justify-self: start;
+    white-space: normal; 
+    overflow: visible;
+    width: 100%;
+  }
+}
