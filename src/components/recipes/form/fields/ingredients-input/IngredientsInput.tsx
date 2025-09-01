@@ -51,7 +51,7 @@ export default function IngredientsInput({ ingredients, setIngredients, validate
                   <Form.Control
                     required
                     aria-label="Ingredient Name"
-                    placeholder="Enter ingredient name"
+                    placeholder="Enter ingredient"
                     name="name"
                     value={ingredient.name}
                     isInvalid={validated && !ingredient.name.trim()}
@@ -73,7 +73,7 @@ export default function IngredientsInput({ ingredients, setIngredients, validate
                   <InputGroup.Text className={styles.inputText}>Quantity</InputGroup.Text>
                   <Form.Control
                     aria-label="Ingredient Quantity"
-                    placeholder="Enter quantity (e.g. 1 cup)"
+                    placeholder="Enter quantity"
                     name="quantity"
                     value={ingredient.quantity}
                     className={styles.formControl}
