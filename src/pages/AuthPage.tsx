@@ -92,8 +92,21 @@ export default function AuthPage() {
       }
 
       navigate('/');
-    } catch {
-      setAuthError("Registration failed. Please try again later.");
+    } catch (err: unknown) {
+      const error = err as { code?: string; response?: { status?: number } };
+
+      if (error.code === "auth/weak-password") {
+        setAuthError("Password is too weak. Please choose a stronger one.");
+      }
+      else if (error.code === "auth/missing-password") {
+        setAuthError("Password is required.");
+      }
+      else if (error.code === "auth/invalid-email") {
+        setAuthError("Invalid email address.");
+      }
+      else {
+        setAuthError("Registration failed. Please try again.");
+      }
     } finally {
       setIsSubmitting(false);
     }
